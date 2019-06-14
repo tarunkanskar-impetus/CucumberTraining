@@ -11,7 +11,7 @@ Then click on users link at left side of website
 Then user moves to new user page and click on Add new button
 Then user enters new user details "<firstname>" and "<lastname>" and "<username1>" and "<role>" and "<email>"
 Then verify user is created 
-Then close the browser
+Then Close the browser
 
 Examples:
 	| username    | password    | username1     | email            |  firstname  | lastname | role         |

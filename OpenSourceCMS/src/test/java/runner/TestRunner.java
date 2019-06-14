@@ -10,7 +10,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = "Feature",
+		features = "C:\\Users\\tarun.kanskar\\git\\CucumberTraining\\OpenSourceCMS\\Feature\\TestCase3.feature",
 		glue={"stepDefinition"}
 	
 		)
@@ -18,6 +18,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
 @Test
-public class TestRunner extends AbstractTestNGCucumberTests{
+public class TestRunner extends AbstractTestNGCucumberTests
+
+{
 
 }

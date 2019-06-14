@@ -14,8 +14,7 @@ Then confirm on publish
 Then verify your new create page with user name
 Then Close the browser
 
-
 Examples:
-	| username | password |
-	| naveenk  | test@123 | 
-	| naveenk  | test@123 |
+	| username    | password    | 
+	|opensourcecms|opensourcecms| 
+	|opensourcecms|opensourcecms|

@@ -1,82 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75928" started-at="2019-06-14T11:07:17Z" finished-at="2019-06-14T11:08:33Z">
+  <suite name="Default suite" duration-ms="86632" started-at="2019-06-14T12:38:55Z" finished-at="2019-06-14T12:40:21Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="75928" started-at="2019-06-14T11:07:17Z" finished-at="2019-06-14T11:08:33Z">
+    <test name="Default test" duration-ms="86632" started-at="2019-06-14T12:38:55Z" finished-at="2019-06-14T12:40:21Z">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@2d3fcdbd]" test-instance-name="" name="setUpClass" is-config="true" duration-ms="123" started-at="2019-06-14T16:37:17Z" finished-at="2019-06-14T16:37:18Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@2d3fcdbd]" test-instance-name="" name="setUpClass" is-config="true" duration-ms="142" started-at="2019-06-14T18:08:55Z" finished-at="2019-06-14T18:08:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method name="runScenario" test-instance-name="" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" status="PASS" duration-ms="7916" finished-at="2019-06-14T16:37:26Z" started-at="2019-06-14T16:37:18Z" data-provider="scenarios" description="Runs Cucumber Scenarios">
+        <test-method name="runScenario" test-instance-name="" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" status="SKIP" duration-ms="60482" finished-at="2019-06-14T18:09:56Z" started-at="2019-06-14T18:08:55Z" data-provider="scenarios" description="Runs Cucumber Scenarios">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Free opensourcecms Login Test Scenario"]]>
+                <![CDATA["Free opensourcecms Create a new page scenario"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Free opensourcecms Login Feature"]]>
+                <![CDATA["Free opensourcecms Create Pages"]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method name="runScenario" test-instance-name="" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" status="PASS" duration-ms="18397" finished-at="2019-06-14T16:37:44Z" started-at="2019-06-14T16:37:26Z" data-provider="scenarios" description="Runs Cucumber Scenarios">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Free opensourcecms Login Test Scenario"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Free opensourcecms Login Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method name="runScenario" test-instance-name="" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" status="FAIL" duration-ms="17157" finished-at="2019-06-14T16:38:01Z" started-at="2019-06-14T16:37:44Z" data-provider="scenarios" description="Runs Cucumber Scenarios">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Free opensourcecms Create a new user scenario"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Free opensourcecms Create Users"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="cucumber.runtime.CucumberException">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Step [verify user is created] is defined with 1 parameters at 'stepDefinition.TestCase1.verify_user_is_created(String) in file:/D:/CucumberLearning/OpenSourceCMS/target/test-classes/'.
-However, the gherkin step has 0 arguments.
-Step text: verify user is created]]>
+              <![CDATA[There are undefined steps]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: Step [verify user is created] is defined with 1 parameters at 'stepDefinition.TestCase1.verify_user_is_created(String) in file:/D:/CucumberLearning/OpenSourceCMS/target/test-classes/'.
-However, the gherkin step has 0 arguments.
-Step text: verify user is created
-	at cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:49)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:57)
+              <![CDATA[org.testng.SkipException: There are undefined steps
+	at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:60)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:61)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -104,41 +62,31 @@ Step text: verify user is created
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method name="runScenario" test-instance-name="" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" status="FAIL" duration-ms="32272" finished-at="2019-06-14T16:38:33Z" started-at="2019-06-14T16:38:01Z" data-provider="scenarios" description="Runs Cucumber Scenarios">
+        <test-method name="runScenario" test-instance-name="" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2d3fcdbd]" status="SKIP" duration-ms="25947" finished-at="2019-06-14T18:10:21Z" started-at="2019-06-14T18:09:56Z" data-provider="scenarios" description="Runs Cucumber Scenarios">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Free opensourcecms Create a new user scenario"]]>
+                <![CDATA["Free opensourcecms Create a new page scenario"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Free opensourcecms Create Users"]]>
+                <![CDATA["Free opensourcecms Create Pages"]]>
               </value>
             </param>
           </params>
-          <exception class="cucumber.runtime.CucumberException">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Step [verify user is created] is defined with 1 parameters at 'stepDefinition.TestCase1.verify_user_is_created(String) in file:/D:/CucumberLearning/OpenSourceCMS/target/test-classes/'.
-However, the gherkin step has 0 arguments.
-Step text: verify user is created]]>
+              <![CDATA[There are undefined steps]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: Step [verify user is created] is defined with 1 parameters at 'stepDefinition.TestCase1.verify_user_is_created(String) in file:/D:/CucumberLearning/OpenSourceCMS/target/test-classes/'.
-However, the gherkin step has 0 arguments.
-Step text: verify user is created
-	at cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:49)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:57)
+              <![CDATA[org.testng.SkipException: There are undefined steps
+	at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:60)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:61)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -166,11 +114,11 @@ Step text: verify user is created
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2d3fcdbd]" test-instance-name="" name="tearDownClass" is-config="true" duration-ms="7" started-at="2019-06-14T16:38:33Z" finished-at="2019-06-14T16:38:33Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2d3fcdbd]" test-instance-name="" name="tearDownClass" is-config="true" duration-ms="8" started-at="2019-06-14T18:10:21Z" finished-at="2019-06-14T18:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
